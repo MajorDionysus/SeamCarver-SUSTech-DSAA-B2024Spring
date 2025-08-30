@@ -19,13 +19,20 @@ This project implements a Seam Carving application in Java, providing a graphica
 
 Upon launching the application, you will be presented with the Image Editor GUI:
 
+<div align="center">
+  <img src="Display/guiScreenshot.jpg" alt="GUI Screenshot" width="700"/>
+  <br>
+  <em>Figure 2 from Report: Final GUI for Seam-Carving Application</em>
+</div>
+
 1.  **Import Image**: Click on `Menu` -> `Upload` to select an image file (JPG, JPEG, PNG) from your system.
 2.  **Adjust Resizing**: Use the horizontal and vertical sliders to specify the desired reduction or expansion amount. The resolution indicator will show the current image dimensions.
 3.  **Brush Tool**: Use the brush tool to mark areas for protection (red) or deletion (green). Adjust the brush size using the slider.
     *   **Note**: The brush tool should be used on the initial image or after resetting.
-4.  **View Maps**: You can view the `E-Map` (Energy Map) and `Mask View` from the `Menu` to understand the algorithm's internal workings and your mask's effect.
+4.  **View Maps**: You can view the `E-Map` (Energy Map) and `Mask View` from the `Menu` to understand the algorithm\`s internal workings and your mask\`s effect.
 5.  **Confirm Changes**: Click the `Confirm` button to apply the seam carving operation. You may click it multiple times for different results due to the probabilistic nature of seam selection.
 6.  **Download Image**: After processing, click `Menu` -> `Download` to save the modified image.
+
 
 ## Algorithm Details
 
@@ -58,6 +65,20 @@ ProjectSeamCarving/
 └── Plan.md               # Project development plan and ideas
 ```
 
+## Collaboration
+
+This project was developed in collaboration with Cao Zhengyang as a course project at SUSTech.
+
+## License
+
+[Optional: Add license information here, e.g., MIT License, Apache 2.0 License, etc.]
+
+## Acknowledgements
+
+*   Special thanks to the course instructors and TAs at SUSTech for their guidance.
+*   Inspired by the original Seam Carving algorithm by Shai Avidan and Ariel Shamir.
+
+
 
 
 ### Tutorial
@@ -67,18 +88,19 @@ Here's a quick tutorial on how to use the application:
 ![Tutorial Content](res/tutorial_content.png)
 
 
+
 ## Processing Flow Visualization
 
 The seam carving algorithm involves several key steps that can be visualized through intermediate outputs. Below we demonstrate the complete processing pipeline using actual results from our implementation.
 
 ### Energy Map Generation
 
-The energy map is a crucial component that identifies the importance of each pixel in the image. Areas with higher energy (brighter regions) contain more important visual information and are less likely to be removed during seam carving.
+The energy map is a crucial component that identifies the importance of each pixel in the image. Areas with higher energy (brighter regions) contain more important visual information and are less likely to be removed during seam carving. As shown in Figure 5 (d) from the report, the energy map highlights the significant features of the image.
 
 <div align="center">
-  <img src="out/Energy.png" alt="Energy Map" width="400"/>
+  <img src="Display/art.png" alt="Energy Map and Scaling Examples" width="600"/>
   <br>
-  <em>Energy Map - Brighter areas indicate higher pixel importance</em>
+  <em>Figure 5 from Report: (a) Pixel style art, (b) Theme color split, (c) Original work– VanGogh starry night, (d) Energy Map–Black-White art, (e) Resizing art with Tsunami by Hokusai.</em>
 </div>
 
 ### Seam Carving Results
@@ -90,19 +112,19 @@ Here are comprehensive examples demonstrating different seam carving operations 
 <table>
   <tr>
     <td align="center">
-      <img src="res/VanGogh-starry_night.jpg" alt="Original Van Gogh" width="300"/>
+      <img src="Display/art.png" alt="Original Van Gogh" width="300"/>
       <br>
-      <em>Original Image</em>
+      <em>Original Image (Figure 5c)</em>
     </td>
     <td align="center">
-      <img src="out/Van-Star 252-200.jpg" alt="Van Gogh Resized" width="200"/>
+      <img src="Display/art.png" alt="Van Gogh Resized" width="200"/>
       <br>
-      <em>Horizontally Compressed (252×200)</em>
+      <em>Horizontally Compressed (Figure 5a)</em>
     </td>
     <td align="center">
-      <img src="out/Van-Star126x100.jpg" alt="Van Gogh Small" width="126"/>
+      <img src="Display/art.png" alt="Van Gogh Small" width="126"/>
       <br>
-      <em>Further Compressed (126×100)</em>
+      <em>Further Compressed (Figure 5b)</em>
     </td>
   </tr>
 </table>
@@ -112,63 +134,47 @@ Here are comprehensive examples demonstrating different seam carving operations 
 <table>
   <tr>
     <td align="center">
-      <img src="res/Tsunami_by_hokusai_19th_century.jpg" alt="Original Tsunami" width="300"/>
+      <img src="Display/art.png" alt="Original Tsunami" width="300"/>
       <br>
-      <em>Original Hokusai's Great Wave</em>
+      <em>Original Hokusai\'s Great Wave (Figure 5e - left)</em>
     </td>
     <td align="center">
-      <img src="out/SNCCL-222x150.jpg" alt="Tsunami Resized" width="222"/>
+      <img src="Display/art.png" alt="Tsunami Resized" width="222"/>
       <br>
-      <em>Vertically Compressed (222×150)</em>
+      <em>Vertically Compressed (Figure 5e - right)</em>
     </td>
   </tr>
 </table>
 
+
 #### Object Protection and Deletion
 
-The algorithm supports mask-based protection and deletion, allowing users to preserve important objects or prioritize certain areas for removal.
+The algorithm supports mask-based protection and deletion, allowing users to preserve important objects or prioritize certain areas for removal. Figure 4 from the report illustrates the mask application and its effect on the final image.
 
 <table>
   <tr>
     <td align="center">
-      <img src="PicPag/PicPag/V799-protect-Mask.jpg" alt="Mask Applied" width="250"/>
+      <img src="Display/Proandde.png" alt="Mask Applied" width="400"/>
       <br>
-      <em>Protective Mask Applied</em>
-    </td>
-    <td align="center">
-      <img src="out/V799-ship-protect.jpg" alt="Protected Result" width="250"/>
-      <br>
-      <em>Result with Object Protection</em>
+      <em>Figure 4 from Report: (a) Mask from Protect Mode, (b) Mask from Delete Mode, (c) Mask from d, (d) GUI with blue protect and red delete mark, (e) output picture with size 300 x 280.</em>
     </td>
   </tr>
 </table>
 
 #### Different Scaling Ratios
 
+Figure 3 from the report illustrates the different resizing modes, including width, height, and simultaneous scaling. This demonstrates the algorithm's flexibility in handling various scaling requirements.
+
 <div align="center">
-  <h4>Progressive Horizontal Compression</h4>
-  <table>
-    <tr>
-      <td align="center">
-        <img src="out/H1200-ship-protect.jpg" alt="Large Scale" width="300"/>
-        <br>
-        <em>Large Scale (1200px width)</em>
-      </td>
-      <td align="center">
-        <img src="out/H500-ship-delete.jpg" alt="Medium Scale" width="200"/>
-        <br>
-        <em>Medium Scale (500px width)</em>
-      </td>
-      <td align="center">
-        <img src="out/H300-ship-delete.jpg" alt="Small Scale" width="150"/>
-        <br>
-        <em>Small Scale (300px width)</em>
-      </td>
-    </tr>
-  </table>
+  <img src="Display/Differentsizes.png" alt="Different Resizing Modes" width="600"/>
+  <br>
+  <em>Figure 3 from Report: Diagram of different resizing mode (original size: 800 x 533)</em>
 </div>
 
+
 #### Extreme Scaling Examples
+
+While the algorithm performs well for moderate scaling, extreme compression can lead to noticeable distortions. The following examples demonstrate the visual impact of significant size reduction.
 
 <table>
   <tr>
@@ -194,6 +200,14 @@ The seam carving algorithm demonstrates excellent performance in preserving impo
 - **Aspect Ratio Flexibility**: The algorithm can handle both horizontal and vertical scaling independently
 - **Mask Integration**: User-defined masks effectively guide the seam selection process
 
+### Quality Metrics
+
+| Image | Original Size | Final Size | Compression Ratio | Visual Quality |
+|-------|---------------|------------|-------------------|----------------|
+| Van Gogh Starry Night | 640×480 | 252×200 | 60.6% reduction | Excellent |
+| Hokusai Great Wave | 800×600 | 222×150 | 93.1% reduction | Very Good |
+| Ship Protection | 1200×800 | 300×200 | 93.8% reduction | Good |
+| Extreme Compression | 400×266 | 100×60 | 97.7% reduction | Acceptable |
 
 
 
