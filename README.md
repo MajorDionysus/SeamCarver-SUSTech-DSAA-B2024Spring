@@ -100,7 +100,7 @@ The energy map is a crucial component that identifies the importance of each pix
 <div align="center">
   <img src="Display/art.png" alt="Energy Map and Scaling Examples" width="600"/>
   <br>
-  <em>Figure 5 from Report: (a) Pixel style art, (b) Theme color split, (c) Original work– VanGogh starry night, (d) Energy Map–Black-White art, (e) Resizing art with Tsunami by Hokusai.</em>
+  <em>(a) Pixel style art, (b) Theme color split, (c) Original work– VanGogh starry night, (d) Energy Map–Black-White art, (e) Resizing art with Tsunami by Hokusai.</em>
 </div>
 
 ### Seam Carving Results
@@ -161,7 +161,7 @@ The algorithm supports mask-based protection and deletion, allowing users to pre
     <td align="center">
       <img src="Display/Pro and de.png" alt="Mask Applied" width="600"/>
       <br>
-      <em>Figure 4 from Report: (a) Mask from Protect Mode, (b) Mask from Delete Mode, (c) Mask from d, (d) GUI with blue protect and red delete mark, (e) output picture with size 300 x 280.</em>
+      <em>(a) Mask from Protect Mode, (b) Mask from Delete Mode, (c) Mask from d, (d) GUI with blue protect and red delete mark, (e) output picture with size 300 x 280.</em>
     </td>
   </tr>
 </table>
@@ -173,7 +173,7 @@ Figure 3 from the report illustrates the different resizing modes, including wid
 <div align="center">
   <img src="Display/Different sizes.png" alt="Different Resizing Modes" width="600"/>
   <br>
-  <em>Figure 3 from Report: Diagram of different resizing mode (original size: 800 x 533)</em>
+  <em>Diagram of different resizing mode (original size: 800 x 533)</em>
 </div>
 
 
