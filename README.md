@@ -133,7 +133,7 @@ The algorithm supports mask-based protection and deletion, allowing users to pre
     <td align="center">
       <img src="PicPag/PicPag/V799-protect-Mask.jpg" alt="Mask Applied" width="250"/>
       <br>
-      <em>Mask Applied (Red: Protect, Green: Delete)</em>
+      <em>Protective Mask Applied</em>
     </td>
     <td align="center">
       <img src="out/V799-ship-protect.jpg" alt="Protected Result" width="250"/>
@@ -194,14 +194,6 @@ The seam carving algorithm demonstrates excellent performance in preserving impo
 - **Aspect Ratio Flexibility**: The algorithm can handle both horizontal and vertical scaling independently
 - **Mask Integration**: User-defined masks effectively guide the seam selection process
 
-### Quality Metrics
-
-| Image | Original Size | Final Size | Compression Ratio | Visual Quality |
-|-------|---------------|------------|-------------------|----------------|
-| Van Gogh Starry Night | 640×480 | 252×200 | 60.6% reduction | Excellent |
-| Hokusai Great Wave | 800×600 | 222×150 | 93.1% reduction | Very Good |
-| Ship Protection | 1200×800 | 300×200 | 93.8% reduction | Good |
-| Extreme Compression | 400×266 | 100×60 | 97.7% reduction | Acceptable |
 
 
 
