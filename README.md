@@ -107,41 +107,46 @@ The energy map is a crucial component that identifies the importance of each pix
 
 Here are comprehensive examples demonstrating different seam carving operations with various scaling parameters and techniques:
 
-#### Horizontal Scaling Examples
+#### Scaling Examples: Shrinkage
 
 <table>
   <tr>
     <td align="center">
-      <img src="Display/art.png" alt="Original Van Gogh" width="300"/>
+      <img src="PicPag/PicPag/input_original(1).jpg" alt="Original Van Gogh" width="300"/>
       <br>
-      <em>Original Image (Figure 5c)</em>
+      <em>Original Image</em>
     </td>
     <td align="center">
-      <img src="Display/art.png" alt="Van Gogh Resized" width="200"/>
+      <img src="PicPag/PicPag/H500-ship-delete.jpg" alt="Resized" width="188"/>
       <br>
-      <em>Horizontally Compressed (Figure 5a)</em>
+      <em>Horizontally Compressed</em>
     </td>
     <td align="center">
-      <img src="Display/art.png" alt="Van Gogh Small" width="126"/>
+      <img src="PicPag/PicPag/H300-ship-delete.jpg" alt="Small" width="113"/>
       <br>
-      <em>Further Compressed (Figure 5b)</em>
+      <em>Further Compressed</em>
     </td>
   </tr>
 </table>
 
-#### Vertical Scaling Examples
+#### Scaling Examples: Expansion
 
 <table>
   <tr>
     <td align="center">
-      <img src="Display/art.png" alt="Original Tsunami" width="300"/>
+      <img src="PicPag/PicPag/input_original(1).jpg" alt="Original" width="200"/>
       <br>
-      <em>Original Hokusai\'s Great Wave (Figure 5e - left)</em>
+      <em>Original Image</em>
     </td>
     <td align="center">
-      <img src="Display/art.png" alt="Tsunami Resized" width="222"/>
+      <img src="PicPag/PicPag/H1200-ship-protect.jpg" alt="Resized" width="300"/>
       <br>
-      <em>Vertically Compressed (Figure 5e - right)</em>
+      <em>Horizontal Spanned</em>
+    </td>
+    <td align="center">
+      <img src="PicPag/PicPag/V799-ship-protect.jpg" alt="Resized" width="200"/>
+      <br>
+      <em>Vertically Spanned</em>
     </td>
   </tr>
 </table>
@@ -154,7 +159,7 @@ The algorithm supports mask-based protection and deletion, allowing users to pre
 <table>
   <tr>
     <td align="center">
-      <img src="Display/Proandde.png" alt="Mask Applied" width="400"/>
+      <img src="Display/Pro and de.png" alt="Mask Applied" width="600"/>
       <br>
       <em>Figure 4 from Report: (a) Mask from Protect Mode, (b) Mask from Delete Mode, (c) Mask from d, (d) GUI with blue protect and red delete mark, (e) output picture with size 300 x 280.</em>
     </td>
@@ -166,7 +171,7 @@ The algorithm supports mask-based protection and deletion, allowing users to pre
 Figure 3 from the report illustrates the different resizing modes, including width, height, and simultaneous scaling. This demonstrates the algorithm's flexibility in handling various scaling requirements.
 
 <div align="center">
-  <img src="Display/Differentsizes.png" alt="Different Resizing Modes" width="600"/>
+  <img src="Display/Different sizes.png" alt="Different Resizing Modes" width="600"/>
   <br>
   <em>Figure 3 from Report: Diagram of different resizing mode (original size: 800 x 533)</em>
 </div>
@@ -199,15 +204,5 @@ The seam carving algorithm demonstrates excellent performance in preserving impo
 - **Edge Preservation**: Sharp edges and high-contrast areas are well-preserved due to the energy function
 - **Aspect Ratio Flexibility**: The algorithm can handle both horizontal and vertical scaling independently
 - **Mask Integration**: User-defined masks effectively guide the seam selection process
-
-### Quality Metrics
-
-| Image | Original Size | Final Size | Compression Ratio | Visual Quality |
-|-------|---------------|------------|-------------------|----------------|
-| Van Gogh Starry Night | 640×480 | 252×200 | 60.6% reduction | Excellent |
-| Hokusai Great Wave | 800×600 | 222×150 | 93.1% reduction | Very Good |
-| Ship Protection | 1200×800 | 300×200 | 93.8% reduction | Good |
-| Extreme Compression | 400×266 | 100×60 | 97.7% reduction | Acceptable |
-
 
 
