@@ -58,20 +58,6 @@ ProjectSeamCarving/
 └── Plan.md               # Project development plan and ideas
 ```
 
-## Collaboration
-
-This project was developed in collaboration with Cao Zhengyang as a course project at SUSTech.
-
-## License
-
-[Optional: Add license information here, e.g., MIT License, Apache 2.0 License, etc.]
-
-## Acknowledgements
-
-*   Special thanks to the course instructors and TAs at SUSTech for their guidance.
-*   Inspired by the original Seam Carving algorithm by Shai Avidan and Ariel Shamir.
-
-
 
 
 ### Tutorial
